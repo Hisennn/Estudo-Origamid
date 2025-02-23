@@ -153,6 +153,7 @@ h3 {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 body {
@@ -161,4 +162,108 @@ body {
   gap: 60px;
   margin-top: 60px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* responsivo */
+
+@media (max-width: 900px) {
+  .desc {
+    padding: 1.5rem;
+  }
+
+  .desc-item {
+    gap: 1.2rem;
+  }
+
+  .info::after {
+    display: none;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.8rem;
+  }
+
+  body {
+    margin-top: 1.8rem;
+    gap: 1.8rem;
+  }
+
+  a {
+    padding: 0.8rem 1.6rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    gap: 1.7rem;
+  }
+
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .menu li {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottomheader {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .info {
+    justify-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.8rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .foto {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.9rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
 }
