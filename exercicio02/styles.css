@@ -64,6 +64,10 @@
   padding: 20px;
 }
 
+.desc-item:hover {
+  border-left: 0.3rem solid #e21;
+}
+
 .desc-item:nth-child(odd) {
   background-color: #f7f7f7;
 }
